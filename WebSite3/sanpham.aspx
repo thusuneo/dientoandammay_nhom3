@@ -17,7 +17,7 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBHConnectionString4 %>" DeleteCommand="DELETE FROM [SanPham] WHERE [MaSP] = @MaSP" InsertCommand="INSERT INTO [SanPham] ([MaSP], [MaDM_SP], [Donvi], [TenSP], [GiaSP], [ChuThich], [HinhAnh]) VALUES (@MaSP, @MaDM_SP, @Donvi, @TenSP, @GiaSP, @ChuThich, @HinhAnh)" SelectCommand="SELECT [MaSP], [MaDM_SP], [Donvi], [TenSP], [GiaSP], [ChuThich], [HinhAnh] FROM [SanPham]" UpdateCommand="UPDATE [SanPham] SET [MaDM_SP] = @MaDM_SP, [Donvi] = @Donvi, [TenSP] = @TenSP, [GiaSP] = @GiaSP, [ChuThich] = @ChuThich, [HinhAnh] = @HinhAnh WHERE [MaSP] = @MaSP">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [SanPham] WHERE [MaSP] = @MaSP" InsertCommand="INSERT INTO [SanPham] ([MaSP], [MaDM_SP], [Donvi], [TenSP], [GiaSP], [ChuThich], [HinhAnh]) VALUES (@MaSP, @MaDM_SP, @Donvi, @TenSP, @GiaSP, @ChuThich, @HinhAnh)" SelectCommand="SELECT [MaSP], [MaDM_SP], [Donvi], [TenSP], [GiaSP], [ChuThich], [HinhAnh] FROM [SanPham]" UpdateCommand="UPDATE [SanPham] SET [MaDM_SP] = @MaDM_SP, [Donvi] = @Donvi, [TenSP] = @TenSP, [GiaSP] = @GiaSP, [ChuThich] = @ChuThich, [HinhAnh] = @HinhAnh WHERE [MaSP] = @MaSP">
             <DeleteParameters>
                 <asp:Parameter Name="MaSP" Type="Int32" />
             </DeleteParameters>

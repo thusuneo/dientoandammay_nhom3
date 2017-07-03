@@ -14,7 +14,7 @@
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
         </Fields>
     </asp:DetailsView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBHConnectionString4 %>" DeleteCommand="DELETE FROM [LoaiHang] WHERE [MaLH] = @MaLH" InsertCommand="INSERT INTO [LoaiHang] ([MaLH], [TenLH], [MaDM_SP]) VALUES (@MaLH, @TenLH, @MaDM_SP)" SelectCommand="SELECT [MaLH], [TenLH], [MaDM_SP] FROM [LoaiHang]" UpdateCommand="UPDATE [LoaiHang] SET [TenLH] = @TenLH, [MaDM_SP] = @MaDM_SP WHERE [MaLH] = @MaLH">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [LoaiHang] WHERE [MaLH] = @MaLH" InsertCommand="INSERT INTO [LoaiHang] ([MaLH], [TenLH], [MaDM_SP]) VALUES (@MaLH, @TenLH, @MaDM_SP)" SelectCommand="SELECT [MaLH], [TenLH], [MaDM_SP] FROM [LoaiHang]" UpdateCommand="UPDATE [LoaiHang] SET [TenLH] = @TenLH, [MaDM_SP] = @MaDM_SP WHERE [MaLH] = @MaLH">
         <DeleteParameters>
             <asp:Parameter Name="MaLH" Type="Int32" />
         </DeleteParameters>

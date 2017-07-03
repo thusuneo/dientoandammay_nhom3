@@ -81,14 +81,14 @@
     </header>
     <div id="body">
         <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
+        <section class="content-wrapper main-content clear-fix" style="background-color: #FFFFFF">
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
         </section>
     </div>
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>
+                <p style="background-color: #FFFFFF">
                     &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
                 </p>
             </div>

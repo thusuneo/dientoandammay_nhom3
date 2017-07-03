@@ -15,7 +15,7 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBHConnectionString4 %>" DeleteCommand="DELETE FROM [ChitietHD] WHERE [MaCTHD] = @MaCTHD" InsertCommand="INSERT INTO [ChitietHD] ([MaCTHD], [Sotien], [MaSP], [MaHD]) VALUES (@MaCTHD, @Sotien, @MaSP, @MaHD)" SelectCommand="SELECT [MaCTHD], [Sotien], [MaSP], [MaHD] FROM [ChitietHD]" UpdateCommand="UPDATE [ChitietHD] SET [Sotien] = @Sotien, [MaSP] = @MaSP, [MaHD] = @MaHD WHERE [MaCTHD] = @MaCTHD">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [ChitietHD] WHERE [MaCTHD] = @MaCTHD" InsertCommand="INSERT INTO [ChitietHD] ([MaCTHD], [Sotien], [MaSP], [MaHD]) VALUES (@MaCTHD, @Sotien, @MaSP, @MaHD)" SelectCommand="SELECT [MaCTHD], [Sotien], [MaSP], [MaHD] FROM [ChitietHD]" UpdateCommand="UPDATE [ChitietHD] SET [Sotien] = @Sotien, [MaSP] = @MaSP, [MaHD] = @MaHD WHERE [MaCTHD] = @MaCTHD">
             <DeleteParameters>
                 <asp:Parameter Name="MaCTHD" Type="Int32" />
             </DeleteParameters>
